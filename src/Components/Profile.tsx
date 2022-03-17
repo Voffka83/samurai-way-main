@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export let Content = () => {
+export let Profile = () => {
     return <div className="content">
 
                 <div>
