@@ -1,8 +1,22 @@
 
 .item {
     color: yellow;
+
 }
 .item img {
     width: 40px;
     border-radius: 50%;
+}
+
+.button{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 12px;
+}
+.button:hover {
+    background-color: #e7e7e7; /* Green */
+    color: white;
 }

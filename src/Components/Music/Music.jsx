@@ -2,10 +2,10 @@ import React from 'react';
 import s from './Dialogs.module.css';
 
 
-export const Dialogs = () => {
+export const Dialogs = (props) => {
     return (
-        <div className={s}>
-            Dialogs
+        <div>
+            Dialogs - new page!!!
         </div>
     );
 };

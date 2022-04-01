@@ -1,10 +1,9 @@
 import React from 'react';
-import s from './Profile.module.css';
 import {MyPost} from "./MyPosts/MyPost";
 
 
 export let Profile = () => {
-    return <div className={s.content}>
+    return <div>
 
         <div>
             <img
