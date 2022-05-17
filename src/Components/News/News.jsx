@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Music.module.css';
+import s from './News.module.css';
 
 
-export const Music = (props) => {
+export const News = (props) => {
     return (
         <div>
-            Dialogs - new page!!!
+            News - you must read real news
         </div>
     );
 };

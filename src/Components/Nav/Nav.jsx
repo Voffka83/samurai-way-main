@@ -4,19 +4,19 @@ import s from './Nav.module.css'
 export const Nav = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
-            <a href="/profiles">Profile</a>
+            <a href="/profile">Profile</a>
         </div>
-        <div className={s.item}>
+        <div className={`${s.item} ${s.active}`}>
             <a href="/dialogs">Dialogs</a>
         </div>
         <div className={s.item}>
-            <a>Music</a>
+            <a href='/music'>Music</a>
         </div>
         <div className={s.item}>
-            <a>Foto</a>
+            <a href='/photo'>Photo</a>
         </div>
         <div className={s.item}>
-            <a href="">News</a>
+            <a href="/news">News</a>
         </div>
     </nav>
 

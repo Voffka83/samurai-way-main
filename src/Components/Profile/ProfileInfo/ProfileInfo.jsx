@@ -1,9 +1,9 @@
 import React from 'react';
 import {MyPost} from "./MyPosts/MyPost";
-import s from './Profile.module.css'
+import s from './ProfileInfo.module.css'
 
 
-export let Profile = (props) => {
+export let ProfileInfo = (props) => {
     return <div>
 
         <div>
@@ -21,7 +21,6 @@ export let Profile = (props) => {
             </div>
         </div>
 
-        <MyPost/>
 
 
     </div>

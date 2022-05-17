@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Music.module.css';
+import s from './Photo.module.css';
 
 
-export const Music = (props) => {
+export const Photo = (props) => {
     return (
         <div>
-            Dialogs - new page!!!
+            Photo - you may download your photo
         </div>
     );
 };
