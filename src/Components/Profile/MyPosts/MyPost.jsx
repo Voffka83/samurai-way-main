@@ -4,12 +4,21 @@ import {Post} from "./Post/Post";
 
 
 export let MyPost = (props) => {
+
+
+    let postElement = props.postData.map(t => <Post message={t.message} like={t.like}/>)
+
+
     return <div className={s.item}>
+        <div className={s.item}>
+            <div><textarea>write here</textarea></div>
+            <div>
+                <button className={s.button}>Add post immediately</button>
+            </div>
+        </div>
         <div>
-            My posts
-            <Post message='Hi, how are you?' like={15}/>
-            <Post message='It is my first post' like={23}/>
-            <Post message='You are not alone' like={222}/>
+            <h2 className={s.item}>My posts</h2>
+            {postElement}
         </div>
     </div>
 }
