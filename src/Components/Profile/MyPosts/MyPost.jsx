@@ -8,12 +8,19 @@ export let MyPost = (props) => {
 
     let postElement = props.postData.map(t => <Post message={t.message} like={t.like}/>)
 
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        props.addPost(text)
+        newPostElement.current.value = '';
+    }
 
     return <div className={s.item}>
         <div className={s.item}>
-            <div><textarea>write here</textarea></div>
+            <div><textarea ref={newPostElement}></textarea></div>
             <div>
-                <button className={s.button}>Add post immediately</button>
+                <button className={s.button} onClick={addPost}> Add post immediately</button>
             </div>
         </div>
         <div>

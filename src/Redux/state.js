@@ -1,10 +1,8 @@
-
+import {rerenderEntireTree} from "../render";
 
 export let state = {
 
-    sidebar: {
-
-    },
+    sidebar: {},
 
     profilePage: {
         postData: [
@@ -30,6 +28,17 @@ export let state = {
             {id: 3, text: 'Haw are you?'},
             {id: 4, text: 'What is your name?'}
         ]
-    }
+    },
 
+}
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        like: 0
+    };
+
+    state.profilePage.post.push(newPost);
+    rerenderEntireTree();
 }
