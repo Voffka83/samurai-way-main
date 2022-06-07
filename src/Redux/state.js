@@ -39,6 +39,6 @@ export let addPost = (postMessage) => {
         like: 0
     };
 
-    state.profilePage.post.push(newPost);
-    rerenderEntireTree();
+    state.profilePage.postData.push(newPost);
+    rerenderEntireTree(state);
 }
